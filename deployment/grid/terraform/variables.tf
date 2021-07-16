@@ -52,6 +52,11 @@ variable "lambda_runtime" {
   description = "Lambda runtine"
 }
 
+variable "lambda_timeout" {
+  default = 300
+  description = "Lambda function timeout"
+}
+
 variable "kubernetes_version" {
   default = "1.19"
   description = "Name of EKS cluster in AWS"
@@ -435,4 +440,15 @@ variable "redis_port" {
   description = "Port for Redis instance"
   default = 6379
   type = number
+}
+
+variable "cancel_tasks_port" {
+  description = "Port for Cancel Tasks Lambda function"  
+  default = 9000
+  type = number
+}
+
+variable "cancel_tasks_image" {
+  description = "Name of cancel_tasks Lambda RIE image"
+  type = string
 }

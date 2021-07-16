@@ -22,6 +22,10 @@ variable "lambda_runtime" {
   description = "Python version"
 }
 
+variable "lambda_timeout" {
+  description = "Lambda function timeout"
+}
+
 variable "ddb_status_table" {
   description = "HTC DynamoDB table name"
 }
@@ -177,4 +181,12 @@ variable "local_services_port" {
 
 variable "redis_port" {
   description = "Port for Redis instance"
+}
+
+variable "cancel_tasks_port" {
+  description = "Port for Cancel Tasks Lambda function"  
+}
+
+variable "cancel_tasks_image" {
+  description = "Name of cancel_tasks Lambda RIE image"
 }

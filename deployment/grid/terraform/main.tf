@@ -130,6 +130,7 @@ module "scheduler" {
     suffix = local.project_name
     region = var.region
     lambda_runtime = var.lambda_runtime
+    lambda_timeout = var.lambda_timeout
     aws_htc_ecr = local.aws_htc_ecr
     ddb_status_table = local.ddb_status_table
     sqs_queue = local.sqs_queue
