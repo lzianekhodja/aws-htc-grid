@@ -102,7 +102,7 @@ Check the python version as follows:
 $ which python
 <project_root>/venv/bin/python
 $ python -V
-Python 3.7.10
+Python 3.7.10 
 ```
 
 For further details on *virtualenv* see https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
